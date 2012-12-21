@@ -1,0 +1,12 @@
+target/
+build/
+.DS_Store
+.idea/
+.settings
+.project
+.classpath
+.ideaj
+*.iml
+.pydevproject
+
+

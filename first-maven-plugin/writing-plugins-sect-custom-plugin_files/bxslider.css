@@ -1,0 +1,24 @@
+.bx-prev {
+	position: absolute;
+	top: 250px;
+	left: 0px;
+	width: 31px;
+	height: 31px;
+	text-indent: -999999px;
+	background: url(../images/gray_prev.png) no-repeat 0 -30px;
+}
+
+.bx-next {
+	position: absolute;
+	top: 250px;
+	right: 0px;
+	width: 31px;
+	height: 31px;
+	text-indent: -999999px;
+	background: url(../images/gray_next.png) no-repeat 0 -30px;
+}
+
+.bx-next:hover,
+.bx-prev:hover {
+	background-position: 0 0;
+}

@@ -1,0 +1,271 @@
+/* 
+Layout Specs: 
+  Max WxH = 1262 x 530
+  Act WxH = 996 x n
+  FF v3.5+
+  Chrome v8+
+  IE v7+
+
+Blueprint Reference: http://ianli.com/blueprinter/?cw=27&gw=30&cc=18
+  Column W: 27 px
+  Gutter W: 30 px
+  Column #: 18 px
+
+1 col : span-18 (996px)
+2 col : span-9  (483px)
+3 col : span-6  (312px)
+4 col : span-3  (141px)
+
+*/
+
+/*------ Content centered and fixed-width------*/
+
+.trunk {
+  margin: 0px auto;
+  width: 996px;
+  }
+
+/*------ Header Layout------*/
+
+#header {
+  display: block;
+  height: 110px;
+  background: url(../images/hf-sprite.png) 0px 0px repeat-x;
+  }
+h1#logo {
+  position: absolute;
+  top: 48px;
+  }
+  h1#logo a {
+    display: block;
+    width: 468px;
+    height: 58px;
+    background: url(../images/hf-sprite.png)  0px -131px no-repeat;
+    }
+  h1#logo span {display:none;}
+
+
+#header ul#header-actions {
+  float: right;
+  display: inline;
+  margin-top: 17px;
+  font-size: 0.9em;
+  }
+#header ul#header-actions li {  
+  display: inline;
+  list-style:none;
+  list-style-image:none;
+  }
+#header ul#header-actions li a {
+  padding: 0px 15px 0px 10px;
+  border-right: 1px solid #999;
+  }
+#header ul#header-actions li.last a {border-right: none;}
+
+#header-search {
+  float: right;
+  margin-top: 15px;
+  }
+  
+.search-box {
+  position:relative;
+  width:178px;
+  height:20px;
+  background: url(../images/hf-sprite.png)  0px -241px no-repeat;
+  } 
+.search-box form {display:inline;} 
+.search-field {
+  border:0px;
+  background-color:transparent;
+  padding-left: 28px;
+  width:140px;
+  height:20px;
+  }
+.search-btn {
+  position:absolute;
+  width:28px;
+  height:20px;
+  border:0px;
+  background-color:transparent;
+  }
+
+#nav-main {
+  float: right;
+  margin: 22px 0px 0px 35px;
+  }
+
+/*------ Content Area : Note: This will be controled by Blueprint ------*/  
+  
+#bnr-home {
+  clear:both;
+  display: block;
+  height: 240px;
+  background-color: #000;
+  }
+#bnr-home div.trunk{
+  background: url(../flash/bg-bnr-home.png) 0px 0px no-repeat;   /* This is content, so it should be moved into the CMS */
+  }
+#content {
+  display: block;
+  min-height: 200px;
+  }
+  
+  
+/*------ Footer Layout------*/  
+
+#super-footer h2 {
+  font-size:1em;
+  margin-bottom:0.75em;
+  }
+
+
+#super-footer {
+  display: block;
+  height: 157px;
+  background-color: #333;
+  padding: 18px 18px 18px 18px;
+  }
+  
+#footer-quote {
+  float: left;
+  margin-left: -36px;
+  background: url(../images/hf-sprite.png)  36px -262px no-repeat;
+  display:block;
+  width: 357px;
+  height: 156px;
+  }
+#footer-quote img {
+  float: left;
+  margin: 28px 10px 0px 0px;
+  }
+#footer-quote blockquote {}
+#footer-quote blockquote div {
+  padding: 10px 0px 0px 0px;
+  text-align:right;
+  font-weight:bold;
+}
+#footer-quote blockquote div:before {content: "- ";}
+
+#footer-actions {
+  display:block;
+  float: left;
+  margin-left:18px;
+  }
+#footer-search {
+  margin-bottom: 42px;
+  }
+
+#footer-links {
+  display:block;
+  float: left;
+  }
+#footer-links ul {
+  float: left;
+  margin: 0px 0px 0px 25px;
+  padding: 0px;
+  list-style-type: none;
+  }
+#footer-links ul li{
+  margin-bottom: 3px;
+  }
+
+
+
+
+#footer {
+  clear:both;
+  display: block;
+  height: 50px;
+  background-color: #262626;
+  }
+
+#footer p {
+  float: left;
+  margin: 14px 220px 0px 0px;
+  }
+
+ul#footer-actions {
+  float: right;
+  display: inline;
+  margin-top: 17px;
+  font-size: 0.9em;
+  }
+ul#footer-actions li {  
+  display: inline;
+  list-style:none;
+  list-style-image:none;
+  }
+ul#footer-actions li a {
+  padding: 0px 15px 0px 10px;
+  border-right: 1px solid #999;
+  }
+ul#footer-actions li.last a {border-right: none;}
+  
+
+
+/*------  Fineprint Links ------ */
+.gray,
+.gray a,
+.gray a:link,  
+.gray a:visited,
+.gray a:active {
+  color: #999 !important;
+  text-decoration: none !important;
+  background-color: none !important;
+  }
+.gray a:link:hover,  
+.gray a:visited:hover {
+  color: #FFF !important;
+  text-decoration:underline !important;
+  background-color: none !important;
+  }
+
+/*------  Main Nav Links ------ */
+.wht,
+.wht a,
+.wht a:link,  
+.wht a:visited,
+.wht a:active {
+  color: #FFF !important;
+  text-decoration: none !important;
+  background-color: none !important;
+  }
+.wht a:link:hover,  
+.wht a:visited:hover {
+  color: #FFF !important;
+  text-decoration:underline !important;
+  background-color: none !important;
+  }
+
+/*------  Graphic Buttons ------ */
+
+
+.gbtn:link, 
+.gbtn:visited{
+  display:block;
+  margin: 10px 0px;
+  width: 179px;
+  height: 29px;
+  background-repeat:no-repeat;
+  border-bottom:none;
+  }
+.gbtn span {display: none;}
+.gbtn:hover {background-position:bottom left;}
+
+.gb-tte {background-image: url(../images/btn-talk-to-an-engineer.png);}
+.gb-rad {background-image: url(../images/btn-request-a-demo.png);}
+
+
+/*------  Links with Icons ------ */
+.bgi {border-bottom: none !important;}
+.bgi:hover { text-decoration:underline !important;}
+
+.bgi {
+  height: 14px;
+  padding: 0px 0px 0px 18px;
+  }
+  
+.si-blog       {background: url(../images/hf-sprite.png) -469px -131px no-repeat;}
+.si-twitter    {background: url(../images/hf-sprite.png) -469px -146px no-repeat;}
+.si-linkedin   {background: url(../images/hf-sprite.png) -469px -161px no-repeat;}
+.si-newsletter {background: url(../images/hf-sprite.png) -469px -176px no-repeat;}
